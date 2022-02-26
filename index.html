@@ -23,8 +23,31 @@ container.</p>
 <a href="#unit-tests-and-integration-tests" id="unit-tests-and-integration-tests" style="color: inherit; text-decoration: none;">
   <h3>Unit tests and integration tests</h3>
 </a>
+<p>Both unit tests and integration tests run with the following command:</p>
 <pre><code class="language-bash"><span class="hl-0">npm </span><span class="hl-1">test</span>
 </code></pre>
+
+<a href="#unit-tests" id="unit-tests" style="color: inherit; text-decoration: none;">
+  <h4>Unit tests</h4>
+</a>
+<p>Unit tests only applies to the implementations within <code>src/utils</code> which does not
+rely on mocked GitHub API response for testing.</p>
+<p>Since setting up <code>nock</code> for GitHub APIs is a complicated process and there is
+not many benefits in testing those utility functions with a mocked endpoint, a
+cut was made to test those implementations separately.</p>
+<p>The unit tests locate with the files that they are testing, for example, the
+unit tests for <code>src/utils/generate_progress.ts</code> will be in
+<code>src/utils/generate_progress.test.ts</code>.</p>
+
+<a href="#integration-tests" id="integration-tests" style="color: inherit; text-decoration: none;">
+  <h4>Integration tests</h4>
+</a>
+<p>The integration tests will mock the end to end flow with mocked triggering
+GitHub events and mocked GitHub API responses.</p>
+<p>The integration tests are close to the actual behavior of the app except that it
+will not be able to test how robust the app is when the GitHub API is flaky or
+what happens when there is too much traffic.</p>
+<p>The integrations tests are in the top level <code>test</code> folder.</p>
 
 <a href="#e2e-testing" id="e2e-testing" style="color: inherit; text-decoration: none;">
   <h3>E2E testing</h3>
