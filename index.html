@@ -12,15 +12,15 @@
 <div class="col-content">
 <div class="tsd-page-title">
 <h2>check-group</h2></div>
-<div class="tsd-panel tsd-typography"><a id="md:dev-docs" class="tsd-anchor"></a><h1><a href="#$dev-docs" style="color:inherit;text-decoration:none">Dev Docs</a></h1><p>TODO(@tianhaoz95): finalize the sections on this page.</p>
-<a id="md:overview" class="tsd-anchor"></a><h2><a href="#$overview" style="color:inherit;text-decoration:none">Overview</a></h2><p>TODO(@tianhaoz95): add the overall structure of the app.</p>
-<a id="md:environment" class="tsd-anchor"></a><h2><a href="#$environment" style="color:inherit;text-decoration:none">Environment</a></h2><p>The recommended way of developing the app is with the Visual Studio Code remote
+<div class="tsd-panel tsd-typography"><a id="md:dev-docs" class="tsd-anchor"></a><h1><a href="#md:dev-docs">Dev Docs</a></h1><p>TODO(@tianhaoz95): finalize the sections on this page.</p>
+<a id="md:overview" class="tsd-anchor"></a><h2><a href="#md:overview">Overview</a></h2><p>TODO(@tianhaoz95): add the overall structure of the app.</p>
+<a id="md:environment" class="tsd-anchor"></a><h2><a href="#md:environment">Environment</a></h2><p>The recommended way of developing the app is with the Visual Studio Code remote
 container.</p>
 <p>TODO(@tianhaoz95): add detailed instructions.</p>
-<a id="md:testing" class="tsd-anchor"></a><h2><a href="#$testing" style="color:inherit;text-decoration:none">Testing</a></h2><a id="md:unit-tests-and-integration-tests" class="tsd-anchor"></a><h3><a href="#$unit-tests-and-integration-tests" style="color:inherit;text-decoration:none">Unit tests and integration tests</a></h3><p>Both unit tests and integration tests run with the following command:</p>
+<a id="md:testing" class="tsd-anchor"></a><h2><a href="#md:testing">Testing</a></h2><a id="md:unit-tests-and-integration-tests" class="tsd-anchor"></a><h3><a href="#md:unit-tests-and-integration-tests">Unit tests and integration tests</a></h3><p>Both unit tests and integration tests run with the following command:</p>
 <pre><code class="language-bash"><span class="hl-0">npm </span><span class="hl-1">test</span>
-</code></pre>
-<a id="md:unit-tests" class="tsd-anchor"></a><h4><a href="#$unit-tests" style="color:inherit;text-decoration:none">Unit tests</a></h4><p>Unit tests only applies to the implementations within <code>src/utils</code> which does not
+</code><button>Copy</button></pre>
+<a id="md:unit-tests" class="tsd-anchor"></a><h4><a href="#md:unit-tests">Unit tests</a></h4><p>Unit tests only applies to the implementations within <code>src/utils</code> which does not
 rely on mocked GitHub API response for testing.</p>
 <p>Since setting up <code>nock</code> for GitHub APIs is a complicated process and there is
 not many benefits in testing those utility functions with a mocked endpoint, a
@@ -28,16 +28,16 @@ cut was made to test those implementations separately.</p>
 <p>The unit tests locate with the files that they are testing, for example, the
 unit tests for <code>src/utils/generate_progress.ts</code> will be in
 <code>src/utils/generate_progress.test.ts</code>.</p>
-<a id="md:integration-tests" class="tsd-anchor"></a><h4><a href="#$integration-tests" style="color:inherit;text-decoration:none">Integration tests</a></h4><p>The integration tests will mock the end to end flow with mocked triggering
+<a id="md:integration-tests" class="tsd-anchor"></a><h4><a href="#md:integration-tests">Integration tests</a></h4><p>The integration tests will mock the end to end flow with mocked triggering
 GitHub events and mocked GitHub API responses.</p>
 <p>The integration tests are close to the actual behavior of the app except that it
 will not be able to test how robust the app is when the GitHub API is flaky or
 what happens when there is too much traffic.</p>
 <p>The integrations tests are in the top level <code>test</code> folder.</p>
-<a id="md:e2e-testing" class="tsd-anchor"></a><h3><a href="#$e2e-testing" style="color:inherit;text-decoration:none">E2E testing</a></h3><p>For now, the best way to do end to end testing is to create a testing repository
+<a id="md:e2e-testing" class="tsd-anchor"></a><h3><a href="#md:e2e-testing">E2E testing</a></h3><p>For now, the best way to do end to end testing is to create a testing repository
 and a test GitHub app which will be installed into the testing repository.</p>
 <p>TODO(@tianhaoz95): add detailed instructions on how to create the testing setup.</p>
-<a id="md:deployment" class="tsd-anchor"></a><h2><a href="#$deployment" style="color:inherit;text-decoration:none">Deployment</a></h2><p>TODO(@tianhaoz95): add details on how deployment works.</p>
+<a id="md:deployment" class="tsd-anchor"></a><h2><a href="#md:deployment">Deployment</a></h2><p>TODO(@tianhaoz95): add details on how deployment works.</p>
 </div></div>
 <div class="col-sidebar">
 <div class="page-menu">

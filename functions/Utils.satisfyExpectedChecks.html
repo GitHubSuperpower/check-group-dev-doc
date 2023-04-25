@@ -21,16 +21,6 @@
 <li class="tsd-signature tsd-anchor-link" id="satisfyExpectedChecks"><span class="tsd-kind-call-signature">satisfy<wbr/>Expected<wbr/>Checks</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">subProjs</span>, <span class="tsd-kind-parameter">checksStatusLookup</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/CheckGroupTypes.CheckResult.html" class="tsd-signature-type tsd-kind-type-alias">CheckResult</a><a href="#satisfyExpectedChecks" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Checks if all the sub-project requirements are satisfied.</p>
-
-<h3>Returns</h3><p>The current status of checks fulfillment.</p>
-<ul>
-<li>&quot;all_passing&quot; means all required checks post
-success conclusion.</li>
-<li>&quot;has_failure&quot; means at least one of the required
-checks failed.</li>
-<li>&quot;pending&quot; means there is no failure but some
-checks are pending or missing.</li>
-</ul>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -46,9 +36,18 @@ matches.</p>
 posted progresses. The key is the check ID and the value
 is the current check status.</p>
 </div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../types/CheckGroupTypes.CheckResult.html" class="tsd-signature-type tsd-kind-type-alias">CheckResult</a></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <a href="../types/CheckGroupTypes.CheckResult.html" class="tsd-signature-type tsd-kind-type-alias">CheckResult</a></h4><p>The current status of checks fulfillment.</p>
 <ul>
-<li>Defined in <a href="https://github.com/tianhaoz95/check-group/blob/c32168b/src/utils/satisfy_expected_checks.ts#L23">utils/satisfy_expected_checks.ts:23</a></li></ul></aside></li></ul></section></div>
+<li>&quot;all_passing&quot; means all required checks post
+success conclusion.</li>
+<li>&quot;has_failure&quot; means at least one of the required
+checks failed.</li>
+<li>&quot;pending&quot; means there is no failure but some
+checks are pending or missing.</li>
+</ul>
+<aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/tianhaoz95/check-group/blob/1034a63/src/utils/satisfy_expected_checks.ts#L23">utils/satisfy_expected_checks.ts:23</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
